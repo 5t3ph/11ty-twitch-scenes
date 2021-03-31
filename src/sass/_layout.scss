@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --color-primary: #ab79d6;
+  --color-surface: #222;
+}
+
+body {
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 500;
+  background-color: var(--color-surface);
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100vh;
+}
+
+header {
+  color: var(--color-primary);
+  font-size: 1.25rem;
+  letter-spacing: 0.03em;
+  border-top-width: 5px;
+  border-top-style: solid;
+  border-image: linear-gradient(
+      35deg,
+      #d367c1 10%,
+      #dedf40 25%,
+      #62cb5c 50%,
+      #00bbcb 75%,
+      #ab79d6 90%
+    )
+    1;
+
+  strong {
+    background-color: var(--color-primary);
+    color: var(--color-surface);
+    padding-inline: 0.5em;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #title {
+    background-color: var(--color-surface);
+    width: fit-content;
+    padding: 1rem;
+  }
+}

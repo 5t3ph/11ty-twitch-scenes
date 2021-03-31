@@ -1,6 +1,6 @@
 {
-  "name": "11ty-sass-skeleton",
-  "version": "1.2.0",
+  "name": "twitch-scenes",
+  "version": "0.1.0",
   "description": "",
   "main": "index.html",
   "scripts": {
@@ -14,19 +14,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/5t3ph/11ty-sass-skeleton.git"
+    "url": "git+https://github.com/5t3ph/twitch-scenes.git"
   },
   "author": "5t3ph",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^0.11.1",
-    "autoprefixer": "^9.8.6",
+    "@11ty/eleventy": "^0.12.1",
+    "autoprefixer": "^10.2.5",
     "cross-env": "^7.0.3",
     "cssnano": "^4.1.10",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.2.6",
+    "postcss": "^8.2.9",
     "postcss-cli": "^8.3.1",
-    "sass": "^1.32.7"
+    "sass": "^1.32.8"
   },
   "browserslist": [
     "last 2 versions"

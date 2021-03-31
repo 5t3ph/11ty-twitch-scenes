@@ -1,0 +1,14 @@
+.scene-preshow {
+  display: grid;
+  place-content: center;
+  font-size: 5rem;
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+  text-align: center;
+  padding: 8vw;
+  line-height: 1;
+
+  + header {
+    background: var(--color-surface);
+  }
+}
