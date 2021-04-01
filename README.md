@@ -14,7 +14,7 @@ Customize the stream title, description, and CTA within `/src/_data/stream.js`.
 
 A scene specific class is generated as `scene-[fileslug]` on the `<main>` element.
 
-The `index` maps to the `primary` Sass file, the other `/scenes/` map to the Sass file matching the file slug. If you add a scene, you will need to create a class to apply styles to `<main>` unless you want the entire area to be a capture area.
+The `index` maps to the `primary` Sass file, the other `/scenes/` map to the Sass file matching the file slug. If you add a scene, you will need to add a CSS style to it's new class to apply styles to `<main>` unless you want the entire area to be a capture area.
 
 The `preshow` layout is an example of passing content to be included within `<main>`.
 
@@ -28,7 +28,7 @@ The basic colors are passed in from CSS custom properties defined in `_layout.sc
 
 ### Capture Areas
 
-In the `primary` scene, the main stream area is approximately 1028x550 when streaming at 1280x720 (and if your text content doesn't increase the height of the header area).
+In the `primary` scene, the main stream capture area is approximately 1030x550 when streaming at 1280x720 (and if your text content doesn't increase the height of the header area).
 
 In the `host` scene, the center of the radial gradient is the capture area.
 
