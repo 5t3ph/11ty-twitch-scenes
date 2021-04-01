@@ -18,6 +18,7 @@ body {
 }
 
 header {
+  min-height: 168px;
   color: var(--color-primary);
   font-size: 1.25rem;
   letter-spacing: 0.03em;
@@ -36,7 +37,8 @@ header {
   strong {
     background-color: var(--color-primary);
     color: var(--color-surface);
-    padding-inline: 0.5em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
   }
 
   h1 {

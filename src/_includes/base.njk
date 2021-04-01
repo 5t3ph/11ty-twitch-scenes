@@ -14,9 +14,9 @@
 	</main>
 	<header>
 		<div id="title">
-			<h1>@5t3ph > Stephanie Eckles</h1>
-			<p>ModernCSS.dev • StyleStage.dev<br>SmolCSS.dev • 11ty.Rocks</p>
-			<strong>buymeacoffee.com/moderncss</strong>
+			<h1>{{ stream.title }}</h1>
+			<p>{{ stream.description | safe }}</p>
+			<strong>{{ stream.cta }}</strong>
 		</div>
 		<div id="captions"></div>
 	</header>

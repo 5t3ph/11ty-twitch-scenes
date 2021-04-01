@@ -1,4 +1,4 @@
-.scene-preshow {
+.scene-postshow {
   display: grid;
   place-content: center;
   background-color: var(--color-primary);
@@ -9,6 +9,10 @@
 
   h2 {
     font-size: 5rem;
+  }
+
+  p {
+    font-size: 3rem;
   }
 
   + header {

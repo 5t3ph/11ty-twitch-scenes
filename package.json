@@ -1,11 +1,11 @@
 {
   "name": "twitch-scenes",
-  "version": "0.1.0",
-  "description": "",
+  "version": "0.2.0",
+  "description": "A slim 11ty + Sass setup to get started creating custom Twitch scenes.",
   "main": "index.html",
   "scripts": {
     "watch:sass": "sass  --no-source-map --watch src/sass:public/css",
-    "watch:eleventy": "eleventy --serve",
+    "watch:eleventy": "eleventy --serve --port=8090",
     "build:sass": "sass  --no-source-map src/sass:public/css",
     "build:eleventy": "eleventy",
     "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map",
