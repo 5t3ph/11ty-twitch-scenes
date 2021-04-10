@@ -1,6 +1,8 @@
 module.exports = {
-  title: "@5t3ph // Stephanie Eckles",
+  twitchUsername: "5t3phDev",
+  title: "Stream topic here",
   // accepts HTML
-  description: "ModernCSS.dev • StyleStage.dev<br>SmolCSS.dev • 11ty.Rocks",
+  description: "@5t3ph // Stephanie Eckles",
   cta: "buymeacoffee.com/moderncss",
+  chatCommands: ["css", "dev"],
 };

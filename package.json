@@ -1,6 +1,6 @@
 {
-  "name": "twitch-scenes",
-  "version": "0.2.0",
+  "name": "11ty-twitch-scenes",
+  "version": "0.3.0",
   "description": "A slim 11ty + Sass setup to get started creating custom Twitch scenes.",
   "main": "index.html",
   "scripts": {

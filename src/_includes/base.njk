@@ -12,13 +12,24 @@
 	<main class="scene-{% if page.fileSlug %}{{ page.fileSlug }}{% else %}primary{% endif %}">
 	{{ content | safe }}
 	</main>
+	{% if not hideHeader %}
 	<header>
 		<div id="title">
 			<h1>{{ stream.title }}</h1>
 			<p>{{ stream.description | safe }}</p>
-			<strong>{{ stream.cta }}</strong>
+			<strong class="cta">{{ stream.cta }}</strong>
+			<ul class="commands">
+				{% for command in stream.chatCommands %}
+				<li>!{{ command }}</li>
+				{% endfor %}
+			</ul>
 		</div>
 		<div id="captions"></div>
 	</header>
+	{% endif %}
+
+	{% if stream.chatCommands %}
+	{% include "comfy/index.njk" %}
+	{% endif %}
 </body>
 </html>

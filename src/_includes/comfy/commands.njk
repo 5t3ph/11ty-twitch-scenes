@@ -1,0 +1,5 @@
+{% for command in stream.chatCommands %}
+<span class="command command-{{ command }}" data-text="{{ command }}"><span>{{ command }}</span></span>
+{% endfor %}
+
+<span class="command sub-thanks" data-text="THANKS!"><span>THANKS!</span></span>

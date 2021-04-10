@@ -34,7 +34,7 @@ header {
     )
     1;
 
-  strong {
+  .cta {
     background-color: var(--color-primary);
     color: var(--color-surface);
     padding-right: 0.5em;
@@ -49,5 +49,20 @@ header {
     background-color: var(--color-surface);
     width: fit-content;
     padding: 1rem;
+  }
+
+  .commands {
+    width: fit-content;
+    list-style: none;
+    margin: 0.25rem 0 0;
+    padding: 0 0.15em;
+    border: 1px dashed;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      font-size: 1rem;
+      padding: 0.15em 0.25em;
+    }
   }
 }
