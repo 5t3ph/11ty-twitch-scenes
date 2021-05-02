@@ -1,5 +1,6 @@
 const main = document.querySelector("main");
 const chatter = document.getElementById("chatter");
+const msgTemplate = document.getElementById("chatMsg");
 
 const activateCommandNode = (node) => {
   setTimeout(() => {
@@ -28,16 +29,10 @@ ComfyJS.onSub = () => {
 };
 
 ComfyJS.onChat = (user, message) => {
-  // Cheap encoding so any HTML in chat doesn't render as HTML
-  // Results in <p><strong>username</strong> the message here</p>
-  const incomingMsg = document.createTextNode(message);
-  const messageNode = document.createElement("p");
-  const userNode = document.createElement("strong");
-
-  userNode.innerText = `${user} `;
-  messageNode.appendChild(userNode);
-  messageNode.appendChild(incomingMsg);
-  chatter.appendChild(messageNode);
+  const newMsg = msgTemplate.content.cloneNode(true);
+  newMsg.querySelector("strong").textContent = user;
+  newMsg.querySelector("span").textContent = message;
+  chatter.appendChild(newMsg);
 };
 
 ComfyJS.Init(twitchUsername);

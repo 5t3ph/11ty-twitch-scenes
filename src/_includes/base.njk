@@ -25,6 +25,10 @@
 			</ul>
 		</div>
 		<div id="chatbox">
+			<template id="chatMsg">
+				<p><strong></strong> <span></span></p>
+			</template>
+			
 			<div id="chatter">
 			{% if page.fileSlug == 'preshow' and stream.preshowMessage %}
 			<p><strong>{{ stream.twitchUsername }}</strong> {{ stream.preshowMessage }}</p>
