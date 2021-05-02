@@ -4,21 +4,26 @@
 }
 
 :root {
-  --color-primary: #ab79d6;
+  --color-primary: hsl(272, 53%, 66%);
   --color-surface: #222;
+  --color-alt: hsl(272, 53%, 90%);
 }
 
 body {
   font-family: "Baloo 2", sans-serif;
   font-weight: 500;
-  background-color: var(--color-surface);
+  // Better represent what transparent areas will appear as in OBS
+  background-color: #000;
   display: grid;
   grid-template-rows: 1fr auto;
   min-height: 100vh;
 }
 
 header {
-  min-height: 168px;
+  max-width: 100vw;
+  display: grid;
+  grid-template-columns: 45ch 1fr;
+  background-color: var(--color-surface);
   color: var(--color-primary);
   font-size: 1.25rem;
   letter-spacing: 0.03em;
@@ -35,8 +40,8 @@ header {
     1;
 
   .cta {
-    background-color: var(--color-primary);
     color: var(--color-surface);
+    background-color: var(--color-primary);
     padding-right: 0.5em;
     padding-left: 0.5em;
   }
@@ -65,4 +70,33 @@ header {
       padding: 0.15em 0.25em;
     }
   }
+}
+
+#chatbox {
+  position: relative;
+  overflow: hidden;
+  height: 128px;
+  margin-top: 20px;
+  width: 100%;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: var(--color-alt);
+  font-weight: normal;
+  font-family: system-ui, sans-serif;
+  line-height: 1.4;
+  border-left: 1px dashed;
+
+  strong {
+    color: var(--color-primary);
+  }
+}
+
+#chatter {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  gap: 0.5rem;
+  padding: 1rem;
 }

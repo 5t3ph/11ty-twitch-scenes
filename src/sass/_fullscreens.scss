@@ -1,4 +1,6 @@
-.scene-postshow {
+.scene-postshow,
+.scene-preshow,
+.scene-break {
   display: grid;
   place-content: center;
   background-color: var(--color-primary);
@@ -13,9 +15,5 @@
 
   p {
     font-size: 3rem;
-  }
-
-  + header {
-    background: var(--color-surface);
   }
 }

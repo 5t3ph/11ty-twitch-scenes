@@ -1,7 +1,42 @@
 .scene-host {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+}
+
+.host {
   background-image: radial-gradient(
     circle at center,
     transparent 50%,
-    var(--color-primary) 50%
+    var(--color-primary) 50.5%
   );
+}
+
+.ctas {
+  display: grid;
+  place-content: center;
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+  padding: 5vh 5vw 0 0;
+  font-size: 1.25rem;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p + * {
+    margin-top: 0.75em;
+  }
+
+  .list-aligned {
+    display: flex;
+    gap: 0.5em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 }

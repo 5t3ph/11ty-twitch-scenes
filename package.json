@@ -5,9 +5,9 @@
   "main": "index.html",
   "scripts": {
     "watch:sass": "sass  --no-source-map --watch src/sass:public/css",
-    "watch:eleventy": "eleventy --serve --port=8090",
+    "watch:eleventy": "npx @11ty/eleventy --serve --port=8090",
     "build:sass": "sass  --no-source-map src/sass:public/css",
-    "build:eleventy": "eleventy",
+    "build:eleventy": "npx @11ty/eleventy",
     "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map",
     "start": "npm-run-all build:sass --parallel watch:*",
     "build": "npm-run-all build:sass build:eleventy"

@@ -1,7 +1,13 @@
 .scene-primary {
-  background-image: linear-gradient(
-    to left,
-    var(--color-primary) 250px,
-    transparent 250px
-  );
+  display: grid;
+  grid-template-columns: 1fr 240px;
+
+  &::after {
+    content: "";
+    background-image: radial-gradient(
+      circle at center,
+      transparent 35%,
+      var(--color-primary) 35.5%
+    );
+  }
 }

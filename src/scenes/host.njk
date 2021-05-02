@@ -1,0 +1,16 @@
+---
+title: Host
+---
+
+<div class="host"></div>
+<div class="ctas">
+<h2>Welcome!</h2>
+<p>Where are you joining from?</p>
+<p>What are you hoping to learn today?</p>
+<h3>Chat commands:</h3>
+<ul class="list-aligned">
+{% for command in stream.chatCommands %}
+<li>!{{ command }}</li>
+{% endfor %}
+</ul>
+</div>

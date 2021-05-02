@@ -24,7 +24,13 @@
 				{% endfor %}
 			</ul>
 		</div>
-		<div id="captions"></div>
+		<div id="chatbox">
+			<div id="chatter">
+			{% if page.fileSlug == 'preshow' and stream.preshowMessage %}
+			<p><strong>{{ stream.twitchUsername }}</strong> {{ stream.preshowMessage }}</p>
+			{% endif %}
+		</div>
+		</div>
 	</header>
 	{% endif %}
 
