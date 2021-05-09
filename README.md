@@ -8,6 +8,8 @@ _If you're new to streaming (I was!) check out [this Learn With Jason episode](h
 
 - Preshow, postshow, and break messages
 - Main scene with large capture area and host webcam capture
+- "guest" scene with two large webcam capture areas
+- "guest-host" scene with two webcams and large display
 - bonus slideshow layout
 
 All scenes include the stream "header" details, which also features embedded chat.
@@ -115,6 +117,12 @@ Edit the text directly within the scene. To show only a centered host capture ar
 
 **break**
 ![break](scene-previews/break.png)
+
+**guest**
+![break](scene-previews/guest.png)
+
+**guest-host**
+![break](scene-previews/guest-host.png)
 
 **new subscription reaction**
 ![new sub thanks](scene-previews/sub-thanks.png)

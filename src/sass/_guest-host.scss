@@ -1,0 +1,41 @@
+.scene-guest-host {
+  display: grid;
+  grid-template-columns: 1fr 240px;
+
+  .webcams {
+    display: grid;
+  }
+
+  .webcams > div {
+    display: grid;
+    justify-content: center;
+    align-content: end;
+    background-image: radial-gradient(
+      circle at center,
+      transparent 50%,
+      var(--color-primary) 50.5%
+    );
+
+    strong {
+      transform: rotate(-5deg) translateX(5%);
+      display: inline-block;
+      background-color: var(--color-surface);
+      color: var(--color-primary);
+      font-size: 1.15rem;
+      text-align: center;
+      padding: 0.25em 0.5em;
+      margin-bottom: 3vh;
+      border-radius: 0.15em;
+      line-height: 1.3;
+      min-width: 10ch;
+
+      small {
+        font-family: system-ui, sans-serif;
+        letter-spacing: 0.03em;
+        font-weight: normal;
+        font-size: 0.7em;
+        display: block;
+      }
+    }
+  }
+}

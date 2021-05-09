@@ -1,0 +1,43 @@
+.scene-guest {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: end;
+  text-align: center;
+  padding-bottom: 5vh;
+  background-image: radial-gradient(
+    circle at center,
+    transparent 50%,
+    var(--color-surface) 50%
+  );
+  background-size: 50% 100%;
+
+  div {
+    &:first-child strong {
+      transform: rotate(12deg) translateX(-20%);
+    }
+
+    &:last-child strong {
+      transform: rotate(-12deg) translateX(20%);
+    }
+  }
+
+  strong {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: var(--color-surface);
+    font-size: 1.5rem;
+    padding: 0.5em 0.75em;
+    border-radius: 0.15em;
+    line-height: 1;
+
+    small {
+      font-family: system-ui, sans-serif;
+      letter-spacing: 0.03em;
+      font-weight: normal;
+      font-size: 0.7em;
+      display: inline-block;
+      margin-left: 1.5rem;
+    }
+  }
+}
