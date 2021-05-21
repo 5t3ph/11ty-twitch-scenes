@@ -4,6 +4,8 @@
 
 _If you're new to streaming (I was!) check out [this Learn With Jason episode](https://www.learnwithjason.dev/about-streaming) where Jason does Q&A about his stream setup._
 
+> Now available: An egghead course that walksthrough the essential steps of how this comes together (requires membership) - **[watch the course >](https://5t3ph.dev/ets)**
+
 **Scenes are optimal at `1280x720`**, and are included for:
 
 - Preshow, postshow, and break messages
