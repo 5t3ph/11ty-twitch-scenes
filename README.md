@@ -62,10 +62,6 @@ In the `primary` scene, the main stream capture area is approximately 1040x550 w
 
 In the `host` scene, the center of the radial gradient is the capture area.
 
-For both of those scenes, there is an additional area intended for captions next to the title bar that will vary depending on your title/description/cta widths.
-
-> Try out [WebCaptioner](https://webcaptioner.com/) as a window source for stream captions. Optimal viewport size to best fit the capture area is 1792 (the width of a 15" Mac laptop) by 380px inner viewport height (tip: open DevTools to help size the viewport area)
-
 ## Command Reponses
 
 Scripts and styles are included to handle showing chat, and responding to chat commands and new subscriptions. These are received with the help of [ComfyJS](https://github.com/instafluff/ComfyJS).
